@@ -5,6 +5,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         val btnPlus = findViewById<Button>(R.id.btnPlus)
         val btnMinus = findViewById<Button>(R.id.btnMinus)
         val btnNull = findViewById<Button>(R.id.btnNull)
+        val btnGoToSecond = findViewById<Button>(R.id.btnGoToSecond)
 
         btnPlus.setOnClickListener {
             counter++
@@ -43,6 +45,11 @@ class MainActivity : AppCompatActivity() {
             counter = 0
             textCounter.text = counter.toString()
             updateUI()
+        }
+        btnGoToSecond.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("EXTRA_COUNTER", counter)
+            startActivity(intent)
         }
     }
 
