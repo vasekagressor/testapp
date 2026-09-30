@@ -55,10 +55,22 @@
         android:id="@+id/btnGoToSecond"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/button_margin_top"
+        android:layout_marginTop="20dp"
         android:text="@string/btn_go_to_second"
-        app:layout_constraintTop_toBottomOf="@id/btnPlus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/btnPlus" />
+
+    <Button
+        android:id="@+id/btnGoToThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_go_to_third"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPlus" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

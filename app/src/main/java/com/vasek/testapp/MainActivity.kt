@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         val btnMinus = findViewById<Button>(R.id.btnMinus)
         val btnNull = findViewById<Button>(R.id.btnNull)
         val btnGoToSecond = findViewById<Button>(R.id.btnGoToSecond)
+        val btnGoToThird = findViewById<Button>(R.id.btnGoToThird)
 
         btnPlus.setOnClickListener {
             counter++
@@ -48,6 +49,11 @@ class MainActivity : AppCompatActivity() {
         }
         btnGoToSecond.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("EXTRA_COUNTER", counter)
+            startActivity(intent)
+        }
+        btnGoToThird.setOnClickListener {
+            val intent = Intent(this, ThirdActivity::class.java)
             intent.putExtra("EXTRA_COUNTER", counter)
             startActivity(intent)
         }
