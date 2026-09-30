@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="counter_text_size">48sp</dimen>
+    <dimen name="button_margin_top">24dp</dimen>
+    <dimen name="screen_padding">16dp</dimen>
+</resources>

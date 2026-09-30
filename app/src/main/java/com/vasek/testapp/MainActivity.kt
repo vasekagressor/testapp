@@ -51,9 +51,9 @@ class MainActivity : AppCompatActivity() {
         textCounter.text = counter.toString()
 
         if (counter >= 10) {
-            textCounter.setTextColor(android.graphics.Color.RED)
+            textCounter.setTextColor(getColor(R.color.counter_warning))
         } else {
-            textCounter.setTextColor(android.graphics.Color.BLACK)
+            textCounter.setTextColor(getColor(R.color.counter_normal))
         }
     }
 }

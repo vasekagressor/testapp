@@ -1,8 +1,8 @@
-<resources>
-    <string name="app_name">vasekstestapp</string>
-    <string name="btn_plus">+1</string>
-    <string name="btn_minus">-1</string>
-    <string name="btn_reset">0</string>
-    <string name="counter_initial">0</string>
-    <string name="error_below_zero">Ниже нуля нельзя!</string>
-</resources>
+    <resources>
+        <string name="app_name">vasekstestapp</string>
+        <string name="btn_plus">+1</string>
+        <string name="btn_minus">-1</string>
+        <string name="btn_reset">0</string>
+        <string name="counter_initial">0</string>
+        <string name="error_below_zero">Ниже нуля нельзя!</string>
+    </resources>
