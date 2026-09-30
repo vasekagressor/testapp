@@ -6,6 +6,7 @@
         <string name="btn_reset">0</string>
         <string name="counter_initial">0</string>
         <string name="error_below_zero">Ниже нуля нельзя!</string>
+        <string name="date_format">%1$s %2$d %3$d год</string>
         <!--    SecondActivity      -->
         <string name="btn_go_to_main">На главный экран</string>
         <string name="btn_go_to_second">На второй экран</string>
